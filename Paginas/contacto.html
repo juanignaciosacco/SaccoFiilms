@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../estilos.css">
+        <title>Contacto</title>
+    </head>
+
+    <body>
+        <!-- Inicia Header -->
+        <header>
+            <!-- Inicia barra navegacion -->
+            <nav class="navbar navbar-dark navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img class="logo" src="../Img/Logo/LOGO SACCO.png" alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Inicio items navegacion -->
+                    <div class="collapse lg-bg-dark navbar-collapse justify-content-end" id="collapsibleNavbar">
+                        <ul class="navbar-nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link navLink" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navLink" href="nostros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navLink" href="bodas.html">Bodas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navLink" href="15anos.html">15 Años</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navLink" href="fotografia3D.html">Fotografía 3D</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navLink" href="video.html">Video</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navLink" href="desarrolloWeb.html">Desarrollo Web</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navLink active" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Fin items navegacion -->
+                </div>
+            </nav>
+            <!-- Fin barra navegacion -->
+        </header>
+        <!-- Fin Header -->
+        <!-- Inicia cuerpo de página -->
+        <h2 class="text-center linea"><span>Contacto</span></h2>
+        <!-- Inicia formulario -->
+        <div class="container text-center">
+            <form id="myForm">
+                <label for="nombre" class="mt-3">Nombre</label>
+                <input type="text" name="nombre" class="form-control mt-2">
+                <label for="email" class="mt-3">Email</label>
+                <input type="email" name="email" class="form-control mt-2">
+                <label for="asunto" class="mt-3">Asunto</label>
+                <select name="asunto" id="asunto" class="text-center form-select mt-2">
+                    <option value="FiestaDe15">Fiestas de 15</option>
+                    <option value="Boda">Bodas</option>
+                    <option value="Fotografia3D">Fotografía 3D</option>
+                    <option value="Video">Video y/o fotografia</option>
+                    <option value="Video">Desarrollo Web</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <label for="comentario" class="mt-3">Comentario:</label>
+                <textarea class="form-control mt-2" rows="5" id="comentario" name="comentario"></textarea>
+                <div class="g-recaptcha mt-3" data-sitekey="6LdONNAjAAAAAHbbzVxM_4YRachUFyfeTCKWoD7A"></div>
+                <div class="text-center">
+                    <input type="submit" value="Enviar" class="btn btn-light mt-3">
+                    <input type="reset" value="Resetear" class="btn btn-light mt-3">
+                </div>
+            </form>
+        </div>
+        <!-- Fin formulario -->
+        <!-- Fin cuerpo de página -->
+
+        <!-- Inicia footer -->
+        <!-- Inicia redes sociales y links a contacto -->
+        <hr class="lineaPie">
+        <div class="text-center">
+        <h3>Seguínos en:</h3>
+        <a href="https://www.youtube.com/@saccofilms595"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://twitter.com/SaccoFilms"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com/pablo.sacco.73"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <hr class="lineaPie">
+        <!-- Fin redes sociales y links contacto -->
+        <div class="container text-center">
+            <div class="row justify-content-between">
+                <div class="col-4">
+                    <h5>Nosotros</h5>
+                    <p>Somos una empresa de multimedia altamente calificada, con personal especializado para brindarle el mejor producto para su empresa.</p>
+                </div>
+                <div class="col-4">
+                    <h5>Información de contacto</h5>
+                    <p>Telefono: <a href="tel" class="linkPie--modificado">+598 2681 69 11</a></p>
+                    <p>Movil: <a href="tel" class="linkPie--modificado">+598 96 213 840</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Fin footer -->
+
+        <!-- Scripts de bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+        </script>
+        <!-- Recaptcha script -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <!-- emailjs script -->
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">      (function () {
+            emailjs.init("POqrx_snIIGH6dOSx");
+            })();
+        </script>
+        <script>
+            emailjs.sendForm("service_151fbdw", "template_08v4n4b", "#myForm")
+        </script>
+        <script>
+            // listen to the form submission
+            document
+              .getElementById("myForm")
+              .addEventListener("submit", function (event) {
+                event.preventDefault();
+      
+                const serviceID = "service_151fbdw";
+                const templateID = "template_08v4n4b";
+      
+                // send the email here
+                emailjs.sendForm(serviceID, templateID, this).then(
+                  (response) => {
+                    console.log("SUCCESS!", response.status, response.text);
+                    alert("SUCCESS!");
+                  },
+                  (error) => {
+                    console.log("FAILED...", error);
+                    alert("FAILED...", error);
+                  }
+                );
+              });
+          </script>
+      
+    </body>
+
+
+</html>

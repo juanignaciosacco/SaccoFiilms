@@ -1,0 +1,279 @@
+// Variables
+$colorNegro: rgb(21,21,21)
+$colorHover: #ff0000
+$colorLineas: #bebebe
+$colorTitulos: #fff
+$colorTextos: #bebebe
+
+body
+    background-color: $colorNegro
+
+h2
+    color: $colorTitulos
+
+// Mixin
+@mixin sizes($height, $width)
+    height: $height
+    width: $width
+// Fin mixin
+
+
+
+// Inicia barra navegacion 
+nav
+    height: 200px
+    background-color: $colorNegro
+    border-bottom: 0.5px solid $colorLineas
+    z-index: 101
+
+.navLink
+    color: #fff
+    border-bottom: 2px solid #fff
+    transition: all 0.5s
+    &:active
+        color: $colorHover
+        border-top: 2px solid #fff
+        border-left: 2px solid #fff
+        border-right: 2px solid #fff
+        border-bottom: none
+        background-color: #fff
+        border-radius: 4%
+    &:hover
+        color: $colorHover
+        border-top: 2px solid #fff
+        border-left: 2px solid #fff
+        border-right: 2px solid #fff
+        border-bottom: none
+        border-radius: 4%
+    &:focus
+        color: $colorHover
+        border-top: 2px solid #fff
+        border-left: 2px solid #fff
+        border-right: 2px solid #fff
+        border-bottom: none
+        background-color: #fff
+        border-radius: 4%
+
+.active
+    color: $colorHover !important
+
+.logo
+    width: 250px
+
+
+// Fin barra navegacion
+
+// Inicia titulo de paginas con lineas
+.linea
+    position: relative
+    z-index: 1
+    span 
+        background: $colorNegro
+        padding: 0 15px
+    &::before
+        border-top: 0.5px solid $colorLineas
+        content: " "
+        margin: 0 auto
+        position: absolute
+        top: 50%
+        left: 0
+        right: 0
+        bottom: 0
+        width: 95%
+        z-index: -1
+// Fin titulo de paginas con lineas
+
+// Inicio pie de pagina
+.lineaPie
+    border: 0.5px solid $colorLineas
+
+h3
+    color: $colorTitulos
+
+h4
+    color: $colorTitulos
+
+h5
+    color: $colorHover
+
+p
+    color: $colorTextos
+
+i
+    color: $colorTextos
+    font-size: 25px
+    &:hover
+        color: $colorHover
+
+.linkPie
+    text-decoration: none
+    color: $colorTextos
+    padding-left: 30px
+    padding-right: 30px
+    border-left: 1px dotted $colorLineas
+    border-right: 1px dotted $colorLineas
+    &:hover
+        color: $colorHover
+    &--modificado
+        text-decoration: none
+        color: $colorTextos
+        border: none
+        &:hover
+            color: $colorHover
+// Fin pie de pagina
+
+// Inicia pagina Home
+.imagenBodasHome
+    display: inline-block
+    position: relative
+    .tituloAvanceBodas
+        display: none
+        position: absolute
+        top: 20px
+        left: 40px
+        z-index: 10
+        h4
+            color: $colorLineas
+    &:hover
+        .tituloAvanceBodas
+            display: block
+
+.imagen15AñosHome
+    display: inline-block
+    position: relative
+    .tituloAvance15Años
+        display: none
+        position: absolute
+        top: 20px
+        left: 40px
+        z-index: 10
+    &:hover
+        .tituloAvance15Años
+            display: block
+
+.imgAvanceBoda
+    width: 100%
+    filter: grayscale(100%)
+    transition: all 1s
+    &:hover
+        outline: 2px solid $colorLineas
+        outline-offset: -15px
+        filter: grayscale(0%)
+
+.imgAvance15años
+    width: 100%
+    filter: grayscale(100%)
+    transition: all 1s
+    &:hover
+        outline: 2px solid #fff
+        outline-offset: -15px
+        filter: grayscale(0%)
+// Fin pagina Home
+
+// Inicia pagina bodas
+
+.btnItem
+    border: none
+    background: none
+
+.imgAvance
+    @include sizes(85%, 100%)
+
+
+.imgContainer
+    margin-bottom: 20px
+
+
+.imgAvance2
+    width: 100%
+    // &:hover
+    //     transform: scale(1.5)s
+
+.imgAvance2-vertical
+    width: 100% 
+    &:hover
+        transform: scale(1.5)
+
+h6
+    a
+        text-decoration: none
+        color: $colorTextos
+        &:hover
+            color: $colorHover
+
+.contenedorVisualizador
+    display: none
+    height: 100vh
+    width: 100vw
+    position: fixed
+    top: 0px
+    background-color: rgba(0, 0, 0, 0.9)
+    z-index: 1001
+    i
+        color: #fff
+        font-size: 50px
+        cursor: pointer
+        &:first-child
+            position: absolute
+            left: 100px
+            top: 40%
+        &:nth-child(2)
+            position: absolute
+            right: 100px
+            top: 30px
+        &:nth-child(3)           
+            position: absolute
+            right: 100px
+            top: 40%
+    .imgContainer
+        margin: 40px auto
+        width: 70%
+        height: 90%
+        text-align: center
+        img
+            max-width: 100%
+            max-height: 100%
+// Fin pagina bodas
+
+// Inicia pagina 15 Años
+#galeria15AV
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+    align-items: center
+// Fin pagina 15 años
+
+
+/* Inicia pagina contacto */
+// Formulario
+form
+    color: $colorTextos
+
+/* Fin pagina contacto */
+
+/* Inicio pagina nosotros */
+p
+    span
+        color: $colorHover
+        text-transform: uppercase
+        font-style: italic
+/* Fin pagina nosotros */
+
+/* Inicio pagina fotografia 3D */
+#textoFoto3D
+    p
+        &:first-child
+            font-style: italic
+/* Fin pagina fotografia 3D */
+
+@media only screen and (max-width: 991px)
+    
+    .nav-item
+        background-color: #101010
+        text-align: center
+    
+    .navLink
+        border-bottom: none
+        &:hover
+            border-radius: 1%

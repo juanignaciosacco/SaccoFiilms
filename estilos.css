@@ -1,0 +1,295 @@
+@charset "UTF-8";
+body {
+  background-color: rgb(21, 21, 21);
+}
+
+h2 {
+  color: #fff;
+}
+
+nav {
+  height: 200px;
+  background-color: rgb(21, 21, 21);
+  border-bottom: 0.5px solid #bebebe;
+  z-index: 101;
+}
+
+.navLink {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  transition: all 0.5s;
+}
+.navLink:active {
+  color: #ff0000;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-bottom: none;
+  background-color: #fff;
+  border-radius: 4%;
+}
+.navLink:hover {
+  color: #ff0000;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-bottom: none;
+  border-radius: 4%;
+}
+.navLink:focus {
+  color: #ff0000;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-bottom: none;
+  background-color: #fff;
+  border-radius: 4%;
+}
+
+.active {
+  color: #ff0000 !important;
+}
+
+.logo {
+  width: 250px;
+}
+
+.linea {
+  position: relative;
+  z-index: 1;
+}
+.linea span {
+  background: rgb(21, 21, 21);
+  padding: 0 15px;
+}
+.linea::before {
+  border-top: 0.5px solid #bebebe;
+  content: " ";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+.lineaPie {
+  border: 0.5px solid #bebebe;
+}
+
+h3 {
+  color: #fff;
+}
+
+h4 {
+  color: #fff;
+}
+
+h5 {
+  color: #ff0000;
+}
+
+p {
+  color: #bebebe;
+}
+
+i {
+  color: #bebebe;
+  font-size: 25px;
+}
+i:hover {
+  color: #ff0000;
+}
+
+.linkPie {
+  text-decoration: none;
+  color: #bebebe;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-left: 1px dotted #bebebe;
+  border-right: 1px dotted #bebebe;
+}
+.linkPie:hover {
+  color: #ff0000;
+}
+.linkPie--modificado {
+  text-decoration: none;
+  color: #bebebe;
+  border: none;
+}
+.linkPie--modificado:hover {
+  color: #ff0000;
+}
+
+.imagenBodasHome {
+  display: inline-block;
+  position: relative;
+}
+.imagenBodasHome .tituloAvanceBodas {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  z-index: 10;
+}
+.imagenBodasHome .tituloAvanceBodas h4 {
+  color: #bebebe;
+}
+.imagenBodasHome:hover .tituloAvanceBodas {
+  display: block;
+}
+
+.imagen15AñosHome {
+  display: inline-block;
+  position: relative;
+}
+.imagen15AñosHome .tituloAvance15Años {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  z-index: 10;
+}
+.imagen15AñosHome:hover .tituloAvance15Años {
+  display: block;
+}
+
+.imgAvanceBoda {
+  width: 100%;
+  filter: grayscale(100%);
+  transition: all 1s;
+}
+.imgAvanceBoda:hover {
+  outline: 2px solid #bebebe;
+  outline-offset: -15px;
+  filter: grayscale(0%);
+}
+
+.imgAvance15años {
+  width: 100%;
+  filter: grayscale(100%);
+  transition: all 1s;
+}
+.imgAvance15años:hover {
+  outline: 2px solid #fff;
+  outline-offset: -15px;
+  filter: grayscale(0%);
+}
+
+.btnItem {
+  border: none;
+  background: none;
+}
+
+.imgAvance {
+  height: 85%;
+  width: 100%;
+}
+
+.imgContainer {
+  margin-bottom: 20px;
+}
+
+.imgAvance2 {
+  width: 100%;
+}
+
+.imgAvance2-vertical {
+  width: 100%;
+}
+.imgAvance2-vertical:hover {
+  transform: scale(1.5);
+}
+
+h6 a {
+  text-decoration: none;
+  color: #bebebe;
+}
+h6 a:hover {
+  color: #ff0000;
+}
+
+.contenedorVisualizador {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1001;
+}
+.contenedorVisualizador i {
+  color: #fff;
+  font-size: 50px;
+  cursor: pointer;
+}
+.contenedorVisualizador i:first-child {
+  position: absolute;
+  left: 100px;
+  top: 40%;
+}
+.contenedorVisualizador i:nth-child(2) {
+  position: absolute;
+  right: 100px;
+  top: 30px;
+}
+.contenedorVisualizador i:nth-child(3) {
+  position: absolute;
+  right: 100px;
+  top: 40%;
+}
+.contenedorVisualizador .imgContainer {
+  margin: 40px auto;
+  width: 70%;
+  height: 90%;
+  text-align: center;
+}
+.contenedorVisualizador .imgContainer img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#galeria15AV {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Inicia pagina contacto */
+form {
+  color: #bebebe;
+}
+
+/* Fin pagina contacto */
+/* Inicio pagina nosotros */
+p span {
+  color: #ff0000;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+/* Fin pagina nosotros */
+/* Inicio pagina fotografia 3D */
+#textoFoto3D p:first-child {
+  font-style: italic;
+}
+
+/* Fin pagina fotografia 3D */
+@media only screen and (max-width: 991px) {
+  .nav-item {
+    background-color: #101010;
+    text-align: center;
+  }
+  .navLink {
+    border-bottom: none;
+  }
+  .navLink:hover {
+    border-radius: 1%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
